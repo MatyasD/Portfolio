@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--first-color);
+}
+
+nav ul {
+    padding-top: 10px;
+}
+
+
+
+nav ul li {
+    display: inline-block;
+}
+
+
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--second-color);
+    transition: 0.5s;
+
+}
+
+nav ul li a:hover {
+    color: var(--third-color);
+    transition: 1s;
+}
+
+
+.container {
+    width: fit-content;
+    margin: 100px auto;
+    text-align: center;
+    color: var(--second-color);
+}
+
+.buttons {
+
+    display: grid;
+    grid-template-columns: repeat(2, 0fr);
+    grid-template-rows: repeat(2, 0fr);
+}
+
+button {
+    background-color: red;
+    height: 200px;
+    width: 300px;
+    border: none;
+    margin: 0 auto;
+}
+
+button:nth-child(1) {
+    border-radius: 10px 0 0 0;
+}
+
+button:nth-child(2) {
+    border-radius: 0 10px 0 0;
+
+}
+
+button:nth-child(3) {
+    border-radius: 0 0 0 10px;
+
+}
+
+button:nth-child(4) {
+    border-radius: 0 0 10px 0;
+
+}
+
+@media (max-width: 625px) {
+    button {
+        width: 200px;
+        height: 140px;
+    }
+
+}
+
+@media (max-width: 420px) {
+    .buttons {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 0fr);
+        margin-top: 50px;
+    }
+
+    button {
+        height: 100px;
+    }
+
+    button:nth-child(1) {
+        border-radius: 10px 10px 0 0;
+    }
+
+    button:nth-child(2) {
+        border-radius: 0 0 0 0;
+
+    }
+
+    button:nth-child(3) {
+        border-radius: 0 0 0 0;
+
+    }
+
+    button:nth-child(4) {
+        border-radius: 0 0 10px 10px;
+    }
+
+
+}
