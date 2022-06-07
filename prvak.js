@@ -7,7 +7,7 @@ const sticks = [];
 let lastPos = null;
 let numOfEvents = document.getElementsByClassName("event").length;
 const homeButton = document.querySelector("ul");
-
+const nameEl = document.querySelector("#name");
 
 
 
@@ -76,11 +76,13 @@ function eventPassed(scrolled) {
 function addingLenght(scrolled) {
 
     let lenghtBonus = 403;
-    var windowWidth = window.innerWidth;
-    if (windowWidth > 1100) {
-        homeButton.style.left = (scrolled) + "px"
+    var nameElTop = window.getComputedStyle(nameEl).top
+
+    if (nameElTop <= 480 + "px") {
+        homeButton.style.left = (scrolled - 175) + "px"
+        console.log()
     } else {
-        homeButton.style.left = (scrolled - 450) + "px"
+        homeButton.style.left = scrolled + "px"
     }
 
     progress.style.width = (scrolled + lenghtBonus) + "px";

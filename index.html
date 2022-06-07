@@ -5,9 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Matyáš Drobík</title>
     <link rel="stylesheet" href="domu.css">
     <link rel="stylesheet" href="root.css">
+    <link rel="icon" type="image/x-icon" href="favicon.png">
 
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
@@ -29,7 +30,7 @@
 <body>
     <nav>
         <ul>
-            <li><a href="#" class="light-mode material-symbols-outlined">
+            <li><a href="#" onclick="changeColorMode()" class="light-mode material-symbols-outlined">
                     light_mode
                 </a>
 
@@ -54,8 +55,8 @@
             <li class="mobile-li"><a class=" mobile-a active" href="#intro">DOMŮ</a></li>
             <li class="mobile-li"><a class="mobile-a" href="#projects">PORTFOLIO</a></li>
             <li class="mobile-li"><a class="mobile-a" href="prvak.html">1. ROČNÍK</a></li>
-            <li class="mobile-li"><a class="mobile-a" href=".contact">KONTAKT</a></li>
-            <li class="mobile-li light-mode"><a class="mobile-a light-mode" href="#"><span
+            <li class="mobile-li"><a class="mobile-a" href="#contact">KONTAKT</a></li>
+            <li class="mobile-li"><a class="mobile-a light-mode" onclick="changeColorMode()" href="#"><span
                         class="material-symbols-outlined">
                         light_mode
                     </span></a></li>
@@ -114,7 +115,7 @@
             <span class="material-symbols-outlined hobby-icon highlight">
                 fitness_center
             </span>
-            <h1 class="hobby-trigger">Sport</h1>
+            <h1>Sport</h1>
             <p>Chodím do posilovny a hraju fotbal. V roce <span class="highlight">2022</span> jsem se účastnil
                 Zlínského půlmaratonu.</p>
         </div>
@@ -170,12 +171,13 @@
                 <span class="material-symbols-outlined">
                     folder
                 </span>
-                <span class="material-symbols-outlined open">
+                <span class="material-symbols-outlined open project-trigger">
                     open_in_new
                 </span>
-                <h1 class="project-title"> Kalkulačka </h1>
+                <h1 class="project-title "> Kalkulačka </h1>
 
-                <p class="project-description">Jednoduchá kalkulačka vytvořena pomocí HTML, CSS a Javascriptu.</p>
+                <p class="project-description ">Jednoduchá kalkulačka vytvořena pomocí HTML, CSS a
+                    Javascriptu.</p>
 
                 <ul>
                     <li>HTML</li>
@@ -187,14 +189,15 @@
         </a>
         <a href="projects/colors.html">
             <div class="project">
-                <span class="material-symbols-outlined">
+                <span class="material-symbols-outlined ">
                     folder
                 </span>
                 <span class="material-symbols-outlined open">
                     open_in_new
                 </span>
-                <h1 class="project-title"> Uhádni barvu </h1>
-                <p class="project-description">Hra, ve které musí uživatel uhádnout barvu podle zobrazeného HEX kódu.
+                <h1 class="project-title "> Uhádni barvu </h1>
+                <p class="project-description ">Hra, ve které musí uživatel uhádnout barvu podle
+                    zobrazeného HEX kódu.
                 </p>
                 <ul>
                     <li>HTML</li>
@@ -230,7 +233,6 @@
 
     </script>
     <script src="domu.js"></script>
-    <script src="domu2.js"></script>
 </body>
 
 </html>

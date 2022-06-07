@@ -17,10 +17,12 @@ body {
     /* overflow-y: hidden; */
 
 
+
 }
 
 .dark-mode {
     --first-color: rgb(192, 194, 201);
+    --first-color-darker: rgb(152, 154, 160);
     --second-color: rgb(19, 26, 43);
     --third-color: rgb(0, 170, 255);
 }
@@ -349,7 +351,7 @@ nav ul li span {
     flex-wrap: nowrap;
     justify-content: space-between;
     transition: 0.5s;
-
+    gap: 100px;
 
 }
 
@@ -357,7 +359,7 @@ nav ul li span {
 
 .project {
     display: inline-block;
-
+    width: 33%;
 }
 
 .project:hover>.open {
@@ -605,6 +607,15 @@ label.logo {
 
     .about ul {
         grid-template-columns: repeat(2, minmax(105px, 200px));
+    }
+
+    .projects {
+        gap: 0px;
+    }
+
+    .projects a {
+        width: fit-content;
+        display: inherit;
     }
 
 }

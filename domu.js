@@ -10,6 +10,7 @@ const hobbyTrigger = document.querySelector(".hobby-trigger");
 const hobbies = document.querySelector(".hobbies")
 const projectsTitle = document.querySelector(".project-title-div")
 const projects = document.querySelector(".projects")
+const projectsTrigger = document.querySelector(".project-trigger");
 const opacityValue = "15%"
 var root = document.querySelector(':root');
 
@@ -31,7 +32,7 @@ window.addEventListener("scroll", event => {
     const domRect2 = introTrigger.getBoundingClientRect();
     const domRect3 = aboutTrigger.getBoundingClientRect();
     const domRect4 = hobbyTrigger.getBoundingClientRect();
-    const domRect5 = projects.getBoundingClientRect();
+    const domRect5 = projectsTrigger.getBoundingClientRect();
 
 
 
@@ -98,8 +99,9 @@ function startAnimations() {
 }
 
 const lightMode = document.querySelector(".light-mode")
+const lightModeMobile = document.querySelector(".light-mode-mobile")
 
-lightMode.onclick = function () {
+function changeColorMode() {
     var element = document.body;
     element.classList.toggle("dark-mode");
 };
