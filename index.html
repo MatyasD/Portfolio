@@ -28,14 +28,15 @@
 </head>
 
 <body>
+    <!-- Navigation -->
     <nav>
         <ul>
-            <li><a href="#" onclick="changeColorMode()" class="light-mode material-symbols-outlined">
+            <li><a href="#" onclick="changeColorMode()" class="material-symbols-outlined">
                     light_mode
                 </a>
 
             </li>
-            <li clas><a class="menu-item m1" href="#intro">DOMŮ</a></li>
+            <li clas><a class="menu-item" href="#intro">DOMŮ</a></li>
             <li><a class="menu-item m2" href="#projects">PORTFOLIO</a></li>
             <li><a class="menu-item m3" href="prvak.html">1. ROČNÍK</a></li>
             <li><a class="menu-item m4" href="#contact">KONTAKT</a></li>
@@ -44,7 +45,7 @@
 
     </nav>
 
-
+    <!-- Mobile naviagtion -->
     <nav class="mobile-nav">
         <input type="checkbox" id="check">
         <label for="check" class="checkbtn">
@@ -56,14 +57,14 @@
             <li class="mobile-li"><a class="mobile-a" href="#projects">PORTFOLIO</a></li>
             <li class="mobile-li"><a class="mobile-a" href="prvak.html">1. ROČNÍK</a></li>
             <li class="mobile-li"><a class="mobile-a" href="#contact">KONTAKT</a></li>
-            <li class="mobile-li"><a class="mobile-a light-mode" onclick="changeColorMode()" href="#"><span
+            <li class="mobile-li"><a class="mobile-a" onclick="changeColorMode()" href="#"><span
                         class="material-symbols-outlined">
                         light_mode
                     </span></a></li>
         </ul>
     </nav>
 
-
+    <!-- Main name -->
     <div id="name-div">
 
         <h1 id="name"><span id="firstName">Matyáš</span> Drobík</h1>
@@ -75,23 +76,20 @@
         <div class="intro-trigger">
             <h1 class="subtitle">Vytvářím webové stránky. </h1>
             <p>Jsem student prvního ročníku <span class="highlight"> Creative Hill College </span> ve Zlíně. Studuji
-                vývoj
-                multimediálních
-                aplikací a
-                počítačových her. </p>
-
+                vývoj multimediálních aplikací a počítačových her. </p>
         </div>
     </div>
 
+    <!-- introduction -->
     <div class="about" id="about">
 
         <h1>O mně</h1>
         <img src="https://png.pngtree.com/png-clipart/20190719/ourlarge/pngtree-character-head-cartoon-png-image_1558413.jpg"
             alt="">
-        <p>Ahoj! Jmenuji se <span class="highlight">Matyáš Drobík</span> baví mě vytváření webových stránek a
+        <p>Ahoj! Jmenuji se <span class="highlight">Matyáš Drobík</span>, baví mě vytváření webových stránek a
             programovaní. O tvorbu <span class="highlight">webových stránek</span>
-            jsem se začal zajímat v roce <span class="highlight"> 2020</span>, kvůli talentovým zkouškám na CHC. </p>
-        <p class="about-trigger">Jazyky, které plně nebo částečně ovládám:</p>
+            jsem se začal zajímat v roce <span class="highlight"> 2020</span> kvůli talentovým zkouškám na CHC. </p>
+        <p class="about-trigger">Jazyky, které ovládám:</p>
         <ul>
             <li>HTML</li>
             <li>CSS</li>
@@ -105,7 +103,7 @@
         </div>
     </div>
 
-
+    <!-- hobbies -->
     <div class="hobbies-title">
         <h1>Zájmy</h1>
     </div>
@@ -125,16 +123,13 @@
                 code
             </span>
             <h1 class="hobby-trigger">Weby</h1>
-            <p>Baví mě vytvářet webové stránky a hledat na nich, co <span class="highlight">nejkreativnější
+            <p>Baví mě vytvářet webové stránky a hledat na nich co <span class="highlight">nejkreativnější
                     řešení</span>.</p>
         </div>
 
     </div>
 
-
-
-
-
+    <!-- projects -->
     <div class="project-title-div">
         <h1 class="projects-title">Projekty</h1>
     </div>
@@ -153,9 +148,7 @@
                     open_in_new
                 </span>
                 <h1 class="project-title"> Generátor hesel </h1>
-                <p class="project-description">Script, který generuje minimilně dvanáctimístná hesla. Hesla jsou
-                    vytvořena
-                    z malých i velkých písmen, znaků a čísel.</p>
+                <p class="project-description">Script, který generuje minimilně dvanáctimístná hesla. </p>
                 <ul>
                     <li>HTML</li>
                     <li>CSS</li>
@@ -207,12 +200,14 @@
             </div>
     </div>
     </a>
+
+    <!-- contact -->
     <div class="contact" id="contact">
         <h1>Kontakt</h1>
         <p>Tlačítkem níže mě můžeš kontaktovat přes <span class="highlight">e-mail</span>.</p>
         <a onclick="window.open('mailto:matyasdrobik@seznam.cz')" href="#">Poslat zprávu</a>
     </div>
-
+    <!-- footer -->
     <footer>
         <p>Vytvořil Matyáš Drobík 2022</p>
     </footer>
@@ -233,6 +228,7 @@
 
     </script>
     <script src="domu.js"></script>
+    <script src="colormode.js"></script>
 </body>
 
 </html>

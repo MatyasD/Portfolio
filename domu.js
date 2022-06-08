@@ -98,12 +98,19 @@ function startAnimations() {
     }
 }
 
-const lightMode = document.querySelector(".light-mode")
-const lightModeMobile = document.querySelector(".light-mode-mobile")
+
 
 function changeColorMode() {
     var element = document.body;
-    element.classList.toggle("dark-mode");
+    element.classList.toggle("light-mode");
+
+    if (element.classList.contains("light-mode")) {
+        localStorage.setItem("colorMode", "light");
+    } else {
+        localStorage.setItem("colorMode", "dark");
+    }
+
+    console.log(localStorage.getItem("colorMode"))
 };
 
 

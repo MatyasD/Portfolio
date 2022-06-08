@@ -43,12 +43,14 @@ scrollDemo.addEventListener("scroll", event => {
 
 
 function eventPassed(scrolled) {
-
+    var style = getComputedStyle(document.body)
+    let thirdColor = style.getPropertyValue('--third-color');
+    let secondColor = style.getPropertyValue('--second-color');
 
     for (i = 0; i < positions.length; i++) {
 
         contents[i].style.visibility = "hidden";
-        sticks[i].style.backgroundColor = "rgb(255, 255, 255, 0.5)";
+        sticks[i].style.backgroundColor = secondColor;
 
 
 
@@ -56,14 +58,14 @@ function eventPassed(scrolled) {
         if (positions[i] <= scrolled) {
 
             contents[i].style.visibility = "visible"
-            sticks[i].style.backgroundColor = "rgb(115, 255, 0, 0.5)";
+            sticks[i].style.backgroundColor = thirdColor;
             lastPos = positions[i];
 
 
         }
         else if (lastPos > scrolled) {
             contents[i].style.visibility = "hidden";
-            sticks[i].style.backgroundColor = "rgb(255, 255, 255, 0.5)";
+            sticks[i].style.backgroundColor = secondColor;
 
         }
 
@@ -88,3 +90,4 @@ function addingLenght(scrolled) {
     progress.style.width = (scrolled + lenghtBonus) + "px";
 
 }
+
