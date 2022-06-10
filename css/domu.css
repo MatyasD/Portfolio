@@ -149,6 +149,11 @@ label.logo {
     font-weight: bold;
 }
 
+label.logo a {
+    text-decoration: none;
+    color: var(--second-color);
+}
+
 .mobile-nav .mobile-ul {
     float: right;
     margin-right: 20px;
